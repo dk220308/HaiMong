@@ -4,6 +4,8 @@
  */
 package View;
 
+import java.awt.BorderLayout;
+
 /**
  *
  * @author XPS
@@ -49,6 +51,11 @@ public class TrangChuQLY extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton2.setText("Khách hàng");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton3.setText("Khuyến mãi");
@@ -137,19 +144,83 @@ public class TrangChuQLY extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+         int width = 1500;
+        int height = 900;
+        QLNV p1 = new QLNV();
+        p1.setSize(width, height); // kichs thuoc = panel goc
+        p1.setLocation(0, 0);
+
+        //b2: de panel vao form
+        jPanel1.setSize(width, height);
+        jPanel1.removeAll();//xoa panel hien tai dang hien thi
+        jPanel1.add(p1, BorderLayout.CENTER);//add them panel moi, hien thi o giua
+        jPanel1.repaint();
+        jPanel1.revalidate();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+         int width = 1500;
+        int height = 900;
+        QLKM p1 = new QLKM();
+        p1.setSize(width, height); // kichs thuoc = panel goc
+        p1.setLocation(0, 0);
+
+        //b2: de panel vao form
+        jPanel1.setSize(width, height);
+        jPanel1.removeAll();//xoa panel hien tai dang hien thi
+        jPanel1.add(p1, BorderLayout.CENTER);//add them panel moi, hien thi o giua
+        jPanel1.repaint();
+        jPanel1.revalidate();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+         int width = 1500;
+        int height = 900;
+        QLTKE p1 = new QLTKE();
+        p1.setSize(width, height); // kichs thuoc = panel goc
+        p1.setLocation(0, 0);
+
+        //b2: de panel vao form
+        jPanel1.setSize(width, height);
+        jPanel1.removeAll();//xoa panel hien tai dang hien thi
+        jPanel1.add(p1, BorderLayout.CENTER);//add them panel moi, hien thi o giua
+        jPanel1.repaint();
+        jPanel1.revalidate();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+         int width = 1500;
+        int height = 900;
+        QLHDCT p1 = new QLHDCT();
+        p1.setSize(width, height); // kichs thuoc = panel goc
+        p1.setLocation(0, 0);
+
+        //b2: de panel vao form
+        jPanel1.setSize(width, height);
+        jPanel1.removeAll();//xoa panel hien tai dang hien thi
+        jPanel1.add(p1, BorderLayout.CENTER);//add them panel moi, hien thi o giua
+        jPanel1.repaint();
+        jPanel1.revalidate();
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+         int width = 1500;
+        int height = 900;
+        QLKH p1 = new QLKH();
+        p1.setSize(width, height); // kichs thuoc = panel goc
+        p1.setLocation(0, 0);
+
+        //b2: de panel vao form
+        jPanel1.setSize(width, height);
+        jPanel1.removeAll();//xoa panel hien tai dang hien thi
+        jPanel1.add(p1, BorderLayout.CENTER);//add them panel moi, hien thi o giua
+        jPanel1.repaint();
+        jPanel1.revalidate();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
